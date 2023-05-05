@@ -1,3 +1,7 @@
+# RK update
+removed: vpn, jellyfin
+added: sabnzb,lidarr,readarr 
+
 # Docker Compose NAS
 
 After searching for the perfect NAS solution, I realized what I wanted could be achieved 
@@ -290,7 +294,7 @@ services:
     image: ghcr.io/bubuntux/nordvpn
     cap_add:
       - NET_ADMIN               # Required
-      - NET_RAW                 # Required
+#      - NET_RAW                 # Required
     environment:                # Review https://github.com/bubuntux/nordvpn#environment-variables
       - USER=user@email.com     # Required
       - "PASS=pas$word"         # Required
